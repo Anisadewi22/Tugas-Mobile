@@ -1,0 +1,31 @@
+class MyClass {
+ 
+  String name;
+  int age;
+
+  MyClass(this.name, this.age);
+
+  // Method 1
+  void methodOne(String field1, int field2, bool field3) {
+    print('Method One:');
+    print('Field1: $field1');
+    print('Field2: $field2');
+    print('Field3: $field3');
+  }
+
+  // Method 2 
+  void methodTwo(double field1, String field2, int field3) {
+    print('Method Two:');
+    print('Field1: $field1');
+    print('Field2: $field2');
+    print('Field3: $field3');
+  }
+}
+
+void main() {
+
+  MyClass myObject = MyClass('Alice', 25);
+
+  myObject.methodOne('Hello', 42, true);
+  myObject.methodTwo(3.14, 'World', 100);
+}
